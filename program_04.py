@@ -1,19 +1,12 @@
-import math
-def checkprimenumber(num):
-    if num<1:
-        return 0
-    if num==1 or num==2 or num==3:
-        return num
-    count=int(math.sqrt(num)+1)
-    for i in range(2,count):
-        if num%i==0:
-            return 0
-    return num
-start=int(input())
-stop=int(input())
-lst=[]
-for i in range(start,stop+1):
-    if checkprimenumber(i):
-        lst.append(i)
-print(*lst)
-print(len(lst))
+def extract_vowel(s):
+    temp_vowel=''
+    for i in s:
+        #print("i=",i)
+        if i in 'AEIOUaeiou':
+            
+            temp_vowel+=i
+            #print("i:",i,"temp_vowel:",temp_vowel)
+    return temp_vowel
+str1=input()
+a=extract_vowel(str1)
+print("vowels:",a)

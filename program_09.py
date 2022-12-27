@@ -1,9 +1,11 @@
-def extract_consonants(s):
-    specialcharacter=''
-    for i in s:
-        if i in '!@#$%&*':
-            specialcharacter+=i
-    return specialcharacter
-str1=input()
-a=extract_specialcharacter(str1)
-print("special characters in:",str1,"is:",a)
+#to remove digits in the given string
+string=input()
+ans=[i for i in string if i in '0123456789']
+print(ans)
+#to remove vowels in the string
+string='''practice problems for list comprehensoin in python'''
+ans=[]
+for i in string:
+    if i not in 'AEIOUaeiou':
+        ans.append(i)
+print(*ans)

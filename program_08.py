@@ -1,9 +1,17 @@
-def extract_digits(s):
-    digit=''
-    for i in s:
-        if i in'0123456789':
-            digit+=i
-    return digit
-str1=input()
-a=extract_digits(str1)
-print("digits in:",str1,"is:",a)
+#to count how many times 'a' is repeated
+string='''practice problems for list comprehensoin in python'''
+print(string.count('a'))
+#extract vowels 
+string=input()
+ans=[]
+for i in string:
+    if i in 'AEIOUaeiou':
+        ans.append(i)
+print(*ans)
+# to find length and extract vowels
+string=input('enter the text:')
+ans=[i for i in string if i in 'AEIOUaeiou']
+print(ans)
+print('length is:',len(ans))
+print(*ans)
+

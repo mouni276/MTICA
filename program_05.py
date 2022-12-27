@@ -1,9 +1,10 @@
-def extract_digit(s):
-    n_digit=0
-    for i in s:
-        if i in '123456789':
-            n_digit+=1
-    return n_digit
-str1=input()
-a=extract_digit(str1)
-print("no of digit in:",str1,"is:",a)
+import time
+
+
+inpNo=int(input("enter a no: "))
+start=time.time()
+for i in range(inpNo):
+          print("i=",i,"i^2=",i*i)
+print("time taken by loop:",(time.time()-start)*1000000)
+          
+ 

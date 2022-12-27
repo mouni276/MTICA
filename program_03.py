@@ -1,7 +1,4 @@
-def checkAnagram(s1,s2):
-    if sorted(s1)==sorted(s2):
-        return 'yes'
-    else:
-        return 'no'
-inp=input().split()
-print(checkAnagram(inp[0],inp[1]))
+x=int(input('enter an integer==>'))
+y=x//10
+z=y%10
+print(x, ',',y, z,sep='@')

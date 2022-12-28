@@ -1,9 +1,4 @@
-def count_consonants(s):
-    n_consonants=0
-    for i in s:
-        if i in 'bcdfghjklmnpqrstvwxyz':
-            n_consonants+=1
-    return n_consonants
-str1=input()
-a=count_consonants(str1)
-print("no of consonants in:",str1,"is:",a)
+string='''practice problems for list comprehensoin in python'''
+wordsList=string.split(' ')
+ans=[i for i in wordsList if len(i.strip('\n'))==8 ]
+print(*ans)

@@ -1,9 +1,16 @@
-def removeVowels(s):
-    temp=''
-    for i in s:
-        if i in 'AEIOUaeiou':
-            temp+=i
+#using map function
+def add_five(x):
+    temp=x+5
     return temp
-str1=input("enter your text:")
-a=removeVowels(str1)
-print("vowels are:",a)
+
+nums=[11,22,33,44,55]
+result=list(map(add_five,nums))
+print(nums)
+print(result)
+print('-'*40)
+#2nd approach
+nums=[11,22,33,44,55]
+result=list(map(lambda x:x+5,nums))
+print(nums)
+print(result)
+print('-'*40)

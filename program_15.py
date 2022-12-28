@@ -1,5 +1,8 @@
-def binTodecimal(n):
-    temp=int(n,2)
-    return temp
-inp=input()
-print(binTodecimal(inp))
+def cube(a):
+    return a*a*a
+lst=[0,1,2,3,4,5,6,7]
+res=list(map(cube,lst))
+
+res1=list(map(lambda x:x*x*x, lst))
+print(lst)
+print(res)

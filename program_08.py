@@ -1,17 +1,4 @@
-#to count how many times 'a' is repeated
-string='''practice problems for list comprehensoin in python'''
-print(string.count('a'))
-#extract vowels 
-string=input()
-ans=[]
-for i in string:
-    if i in 'AEIOUaeiou':
-        ans.append(i)
-print(*ans)
-# to find length and extract vowels
-string=input('enter the text:')
-ans=[i for i in string if i in 'AEIOUaeiou']
+#tofind the square root of the list
+lst=[10,15,20,25,30,35,40,45]
+ans=[i**0.5 for i in lst ]
 print(ans)
-print('length is:',len(ans))
-print(*ans)
-

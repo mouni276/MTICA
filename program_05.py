@@ -1,10 +1,12 @@
-import time
-
-
-inpNo=int(input("enter a no: "))
-start=time.time()
-for i in range(inpNo):
-          print("i=",i,"i^2=",i*i)
-print("time taken by loop:",(time.time()-start)*1000000)
-          
- 
+#find transpose of a matrix
+m=[[1,2],[3,4],[5,6],[7,8]]
+ans=[]
+for row in range(len(m[0])):#row:0,1
+    temp=[]
+    for col in range(len(m)):
+        temp.append(m[col][row])
+    
+    ans.append(temp)
+print(ans)
+    
+    

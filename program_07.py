@@ -1,9 +1,5 @@
-def extract_specialcharacter(s):
-    specialcharacter=''
-    for i in s:
-        if i in '!@#$%^*&()':
-            specialcharacter+=i
-    return n_specialcharacter
-str1=input()
-a=extract_specialcharacter(str1)
-print(" special characters in:",str1,"is:",a)
+#1200 to 2000 with steps of 130 using list comprehensoin
+ans=[]
+for i in range(1200,2001,130):
+    ans.append(i)
+print(ans)

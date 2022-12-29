@@ -1,9 +1,5 @@
-def count_digit(s):
-    n_digit=0
-    for i in s:
-        if i in '123456789':
-            n_digit+=1
-    return n_digit
-str1=input()
-a=count_digit(str1)
-print("no of digit in:",str1,"is:",a)
+#find transpose of a matrix
+m=[[1,2],[3,4],[5,6],[7,8]]
+ans=[[m[col][row] for col in range(len(m))] for row in range(len(m[0]))]
+print(ans)
+    

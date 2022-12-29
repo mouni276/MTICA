@@ -1,4 +1,8 @@
-string='''practice problems for list comprehensoin in python'''
-wordsList=string.split(' ')
-ans=[i for i in wordsList if len(i.strip('\n'))==8 ]
-print(*ans)
+
+#remove empty string
+lst=["sedan","suv","","pickup",'',' ']
+ans=[]
+for i in lst:
+    if i:
+        ans.append(i)
+print(ans)

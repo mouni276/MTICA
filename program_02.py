@@ -1,20 +1,6 @@
-lstEven=[]
-lstOdd=[]
-while(True):
-    inpNum=int(input("enter a value(-1 to end):"))
-    if inpNum==-1:
-        break
-    elif inpNum%2==0:
-        lstEven.append(inpNum)
-    elif inpNum%2==1:
-        lstOdd.append(inpNum)
-print("Even:",*[lstEven])
-print("min:",min(lstEven))
-print("max:",max(lstEven))
-print("avg:",round(sum(lstEven)/len(lstEven),1)) 
-
-print("odd:",*[lstOdd])
-print("min:",min(lstOdd))
-print("max:",max(lstOdd))
-print("avg:",round(sum(lstOdd)/len(lstOdd),1)) 
-
+#use a dictionary comprehensoin,to reverse the string
+string='''practice problems for list comprehension in python'''
+wordslst=string.split(' ')
+wordslst=[i.strip("\n") for i in wordslst ]
+ans={i:i[::-1] for i in wordslst }
+print(ans)
